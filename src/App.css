@@ -1,0 +1,43 @@
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.App h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.mode-indicators {
+  font-size: 18px;
+}
+.mode-selector {
+  display: flex;
+  gap: 15px;
+}
+
+.mode-selector button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.active {
+  background: #28262c;
+  color: white;
+  border: none;
+}
