@@ -2,14 +2,14 @@ function ModeSelector({ mode, changeMode }) {
   return (
     <div className='mode-selector'>
       <button
-        onClick={() => changeMode('Simple')}
-        className={`${mode === 'Simple' ? 'active' : ''}`}
+        onClick={() => changeMode('simple')}
+        className={`${mode === 'simple' ? 'active' : ''}`}
       >
         🎨 Simple
       </button>
       <button
-        onClick={() => changeMode('Hex')}
-        className={`${mode === 'Hex' ? 'active' : ''}`}
+        onClick={() => changeMode('hex')}
+        className={`${mode === 'hex' ? 'active' : ''}`}
       >
         🌈 Hex
       </button>

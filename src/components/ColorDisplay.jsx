@@ -1,17 +1,17 @@
 import { getContrastColor, getRandomSimpleColor } from '../utils/colorUtils';
 
-function ColorDisplay({ color, copy }) {
-  const textColor = getContrastColor(color);
+function ColorDisplay({ currentColor, copy }) {
+  const textColor = getContrastColor(currentColor);
   return (
     <div
       className='color-display'
-      style={{ backgroundColor: `${color}`, color: `${textColor}` }}
+      style={{ backgroundColor: `${currentColor}`, color: `${textColor}` }}
       onClick={copy}
     >
-      {color}
+      {currentColor}
       <div
         className='copy-color'
-        style={{ background: `${textColor}`, color: `${color}` }}
+        style={{ background: `${textColor}`, color: `${currentColor}` }}
       >
         ClickToCopy
       </div>

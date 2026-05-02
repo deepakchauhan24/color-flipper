@@ -48,6 +48,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   width: 90%;
   height: 200px;
   border: 2px solid gray;
@@ -69,4 +70,17 @@ main {
 
 .copy-color:hover {
   margin-top: 120px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.control-buttons button {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 0;
 }
